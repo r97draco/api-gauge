@@ -2,21 +2,23 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 <br>
-*Built with Rust*
+<h2 style={'colour'= 'teal'}>Built with Rust</h2>
 <br> 
 <h2>Functionality :</h2> Measure how your API performs when a lot of concurrent requests are made.
 
-**Webpage:** [lsusb-ui](https://singh47.github.io/api-gauge/)
+**Webpage:** [api-gauge](https://r97draco.github.io/api-gauge/)
 
 ## How to start
-1. ```git clone https://github.com/singh47/api-gauge.git ```
-2. Run following command to run the code (sends 20 requests by default)
+1. ```git clone https://github.com/r97draco/api-gauge.git ```
+2. Run following command to run the code (sends 1 requests by default to https://google.ca/)
 <br>```cargo run```
 2. Run following in terminal
-<br>```npm run [number_of_requests]```
+<br>```cargo run [url_of_site] [number_of_requests]```
+<br> Example :
+<br>```cargo run https://google.com/ 30 ```
 
 ## Showcase
-![alt text](mac-ss.png)
+![alt text](mac_ss.png)
 
 ## Dependencies
 - reqwest = { version = "0.11.14", features = ["json"] }
@@ -25,7 +27,6 @@
 - serde_json = "1.0.91"
 - futures = "0.3.25"
 
-
-<!-- **Members:**
+**Members:**
 1. [Jagroop Singh](https://github.com/r97draco)
-2. [Harmandeep Singh](https://github.com/singh47) -->
+2. [Harmandeep Singh](https://github.com/singh47)
